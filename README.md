@@ -1,20 +1,3 @@
-# cookie-cutter-pipeline-example
+An example on how to add Github authentication (via [ring-oauth2](https://github.com/weavejester/ring-oauth2)) and per pipeline authorization to [LambdaCD with parameterized pipelines](https://github.com/flosell/lambdacd-cookie-cutter-pipeline-example).
 
-An example on how to use parameterized pipeline templates to generate several
-pipelines with the same structure. This can be useful if you have several
-projects that all need basically the same pipeline but have a few minor
-variations, e.g. different repositories and differently named build scripts.
-
-This example can also be your introduction on using functions to generate
-pipelines in general.
-
-**Depends on LambdaCD 0.9.1**
-
-## Usage
-
-* `lein run` will start your pipeline with a web-ui listening on port 8080
-
-## Files
-
-* `pipeline.clj` contains your pipeline-definition
-* `steps.clj` contains your custom build-steps
+`lein run` will start ui on http://localhost:8080
